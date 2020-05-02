@@ -20,7 +20,24 @@ Route::get('/dash', function () {
 Route::get('/dash_parent', function () {
     return view('dash_parent');
 });
-
+Route::get('/admin/dash', function () {
+    return view('admin.dash');
+});
+Route::get('/admin/student', function () {
+    return view('admin.student');
+});
+Route::get('/admin/teachers', function () {
+    return view('/admin/teachers');
+});
+Route::get('/admin/parents', function () {
+    return view('/admin/parents');
+});
+Route::get('/admin/courses', function () {
+    return view('/admin/courses');
+});
+Route::get('/admin/subjects', function () {
+    return view('/admin/subjects');
+});
 
 Auth::routes();
 
